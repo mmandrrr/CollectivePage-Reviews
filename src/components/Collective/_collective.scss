@@ -1,0 +1,160 @@
+.collective {
+    padding-top: 125px;
+
+    &_container {
+        max-width: 1490px;
+        margin: 0 auto;
+        display: flex;
+        gap: 135px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &_title {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    &_title-text {
+        font-size: calc(60px + (80 - 60) * ((100vw - 320px)/(1920 - 320)));
+        line-height: 110px;
+        color: #080606;
+    }
+
+    &_subtitles {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #C3B9B5;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &_subtitle {
+        transition: all 0.3s ease;
+        &:hover {
+            color: #a79994;
+            cursor: pointer;
+        }
+    }
+
+    &_content {
+        max-width: 910px;
+    }
+
+    &_content-text {
+        img {
+            margin-bottom: 100px;
+            max-width: 100%;
+        }
+    }
+
+    &_description {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 100px;
+    }
+
+    &_description-title {
+        font-size: 30px;
+        line-height: 40px;
+        color: #080606;
+    }
+
+    &_description-text {
+        font-size: 20px;
+        line-height: 30px;
+        color: #59443F;
+    }
+
+    &_specialists {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    &_specialists-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    &_specialists-list {
+        margin-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    &_specialists-item {
+        max-width: 442px;
+        display: flex;
+        padding: 30px;
+        gap: 20px;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);;
+
+        }
+    }
+
+    &_specialists-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        span {
+            color: #FFC59E;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+
+    &_specialists-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_specialists-name {
+
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 25px;
+        color: #080606;
+        max-width: 230px;
+        text-decoration: none;
+
+        span {
+            display: block;
+            font-size: 15px;
+            line-height: 15px;
+            color: #C3B9B5;
+            margin-bottom: 10px;
+        }
+    }
+
+    &_specialists-specialization {
+
+        font-size: 20px;
+        line-height: 25px;
+        color: #080606;
+        max-width: 236px;
+
+        span {
+            display: block;
+            font-size: 15px;
+            line-height: 15px;
+            color: #C3B9B5;
+            margin-bottom: 10px;
+        }
+    }
+}

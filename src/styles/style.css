@@ -1,0 +1,563 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.collective {
+  padding-top: 125px;
+}
+
+.collective_container {
+  max-width: 1490px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 135px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.collective_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 100px;
+}
+
+.collective_title-text {
+  font-size: calc(60px + (80 - 60) * ((100vw - 320px)/(1920 - 320)));
+  line-height: 110px;
+  color: #080606;
+}
+
+.collective_subtitles {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #C3B9B5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.collective_subtitle {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.collective_subtitle:hover {
+  color: #a79994;
+  cursor: pointer;
+}
+
+.collective_content {
+  max-width: 910px;
+}
+
+.collective_content-text img {
+  margin-bottom: 100px;
+  max-width: 100%;
+}
+
+.collective_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  margin-bottom: 100px;
+}
+
+.collective_description-title {
+  font-size: 30px;
+  line-height: 40px;
+  color: #080606;
+}
+
+.collective_description-text {
+  font-size: 20px;
+  line-height: 30px;
+  color: #59443F;
+}
+
+.collective_specialists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+
+.collective_specialists-title {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.collective_specialists-list {
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 24px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.collective_specialists-item {
+  max-width: 442px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  gap: 20px;
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.collective_specialists-item:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.collective_specialists-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.collective_specialists-img span {
+  color: #FFC59E;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.collective_specialists-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.collective_specialists-name {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 25px;
+  color: #080606;
+  max-width: 230px;
+  text-decoration: none;
+}
+
+.collective_specialists-name span {
+  display: block;
+  font-size: 15px;
+  line-height: 15px;
+  color: #C3B9B5;
+  margin-bottom: 10px;
+}
+
+.collective_specialists-specialization {
+  font-size: 20px;
+  line-height: 25px;
+  color: #080606;
+  max-width: 236px;
+}
+
+.collective_specialists-specialization span {
+  display: block;
+  font-size: 15px;
+  line-height: 15px;
+  color: #C3B9B5;
+  margin-bottom: 10px;
+}
+
+.specialist-page {
+  padding-top: 240px;
+}
+
+.specialist-page span {
+  display: block;
+  font-size: 20px;
+  line-height: 25px;
+  color: #C3B9B5;
+}
+
+.specialist-page_container {
+  max-width: 1490px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 218px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.specialist-page_profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.specialist-page_profile-picture {
+  width: calc(130px + (333 - 130) * ((100vw - 320px)/(1920 - 320)));
+}
+
+.specialist-page_interaction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.specialist-page_sign-up {
+  width: 285px;
+  height: 70px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 70px;
+  color: #FFF;
+  text-align: center;
+  background-color: #FFC59E;
+  -webkit-box-shadow: 0px 4px 20px #FFC59E;
+          box-shadow: 0px 4px 20px #FFC59E;
+  border-radius: 33.5px;
+}
+
+.specialist-page_sign-up:hover {
+  background-color: #FFF;
+  cursor: pointer;
+  color: #FFC59E;
+}
+
+.specialist-page_write-overview {
+  width: 285px;
+  height: 70px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 70px;
+  color: #FFC59E;
+  text-align: center;
+  border-radius: 33.5px;
+}
+
+.specialist-page_write-overview:hover {
+  -webkit-box-shadow: 0px 4px 20px #FFC59E;
+          box-shadow: 0px 4px 20px #FFC59E;
+  cursor: pointer;
+}
+
+.specialist-page_information {
+  max-width: 909px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 154px;
+  gap: 60px;
+}
+
+.specialist-page_general-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  margin-bottom: 10px;
+}
+
+.specialist-page_name {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.specialist-page_name span {
+  margin-top: 10px;
+  display: block;
+}
+
+.specialist-page_specialization {
+  font-size: 20px;
+  line-height: 30px;
+  color: #59443F;
+}
+
+.specialist-page_information-text {
+  font-size: 20px;
+  line-height: 30px;
+  color: #59443F;
+}
+
+.specialist-page_courses {
+  font-size: 20px;
+  line-height: 30px;
+  color: #59443F;
+}
+
+.specialist-page_corses-list {
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.specialist-page_courses-item {
+  font-size: 20px;
+  line-height: 25px;
+  color: #080606;
+  padding: 16px;
+  border: 1px solid #EDE9E8;
+  border-radius: 20px;
+}
+
+.specialist-page_overview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.specialist-page_overview-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.specialist-page_overview-title {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.specialist-page_overview-counter {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.specialist-page_overview-counter ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #C3B9B5;
+}
+
+.specialist-page_overview-counter ul li:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+.specialist-page_overview-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.specialist-page_overview-item {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  border: 1px solid #EDE9E8;
+  border-radius: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.specialist-page_overview-photo {
+  max-height: 130px;
+}
+
+.specialist-page_overview-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  max-width: 680px;
+}
+
+.specialist-page_overview-name {
+  font-size: 20px;
+  line-height: 25px;
+  color: #080606;
+}
+
+.specialist-page_overview-name span {
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.specialist-page_overview-text {
+  font-size: 20px;
+  line-height: 30px;
+  color: #59443F;
+  margin-bottom: 10px;
+}
+
+.specialist-page_overview-text span {
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.specialist-page_overview-reply {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.specialist-page_overview-reply span {
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.specialist-page_overview-reply-photo {
+  max-height: 75px;
+}
+
+.specialist-page_overview-reply-text {
+  line-height: 25px;
+}
+
+.comp-story_back {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFC59E;
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.comp-story_back:hover {
+  color: #f09355;
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */

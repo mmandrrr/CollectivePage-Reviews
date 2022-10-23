@@ -1,0 +1,246 @@
+.specialist-page {
+    padding-top: 240px;
+
+    span {
+        display: block;
+        font-size: 20px;
+        line-height: 25px;
+        color: #C3B9B5;
+    }
+
+    &_container {
+        max-width: 1490px;
+        margin: 0 auto;
+        display: flex;
+        gap: 218px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &_profile {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    &_profile-picture {
+        width: calc(130px + (333 - 130) * ((100vw - 320px)/(1920 - 320)));
+    }
+
+    &_interaction {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &_sign-up {
+        width: 285px;
+        height: 70px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 70px;
+        color: #FFF;
+        text-align: center;
+        background-color: #FFC59E;
+        box-shadow: 0px 4px 20px #FFC59E;
+        border-radius: 33.5px;
+
+        &:hover {
+            background-color: #FFF;
+            cursor: pointer;
+            color: #FFC59E;
+        }
+    }
+
+    &_write-overview {
+        width: 285px;
+        height: 70px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 70px;
+        color: #FFC59E;
+        text-align: center;
+        border-radius: 33.5px;
+
+        &:hover {
+            box-shadow: 0px 4px 20px #FFC59E;
+            cursor: pointer;
+        }
+    }
+
+    &_information {
+        max-width: 909px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 154px;
+        gap: 60px;
+    }
+
+    &_general-info {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 10px;
+    }
+
+    &_name {
+        font-size: 30px;
+        line-height: 40px;
+
+        span {
+            margin-top: 10px;
+            display: block;
+        }
+    }
+
+    &_specialization {
+        font-size: 20px;
+        line-height: 30px;
+        color: #59443F;
+    }
+
+    &_information-text {
+        font-size: 20px;
+        line-height: 30px;
+        color: #59443F;
+    }
+
+    &_courses {
+        font-size: 20px;
+        line-height: 30px;
+        color: #59443F;
+    }
+
+    &_corses-list {
+        padding: 30px 0;
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    &_courses-item {
+        font-size: 20px;
+        line-height: 25px;
+        color: #080606;
+        padding: 16px;
+        border: 1px solid #EDE9E8;
+        border-radius: 20px;
+    }
+
+    &_overview {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &_overview-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_overview-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    &_overview-counter {
+        align-self: flex-end;
+        ul {
+            display: flex;
+            gap: 16px;font-size: 20px;
+            line-height: 30px;
+            color: #C3B9B5;
+
+            li {
+                &:hover {
+                    cursor: pointer;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    &_overview-list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &_overview-item {
+        max-width: 100%;
+        display: flex;
+        gap: 30px;
+        padding: 30px;
+        border: 1px solid #EDE9E8;
+        border-radius: 20px;
+        flex-wrap: wrap;
+    }
+
+    &_overview-photo {
+        max-height: 130px;
+    }
+
+    &_overview-information {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 680px;
+    }
+
+    &_overview-name {
+        font-size: 20px;
+        line-height: 25px;
+        color: #080606;
+
+        span {
+            font-size: 15px;
+            line-height: 15px;
+        }
+    }
+
+    &_overview-text {
+        font-size: 20px;
+        line-height: 30px;
+        color: #59443F;
+        margin-bottom: 10px;
+
+        span {
+            font-size: 15px;
+            line-height: 15px;
+        }
+    }
+
+    &_overview-reply {
+        display: flex;
+        gap: 30px;
+
+        span {
+            font-size: 15px;
+            line-height: 15px;
+        }
+    }
+
+    &_overview-reply-photo {
+        max-height: 75px;
+    }
+
+    &_overview-reply-text {
+        line-height: 25px;
+    }
+}
+
+
+.comp-story_back {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFC59E;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: #f09355;
+        opacity: 1;
+    }
+}
